@@ -165,6 +165,7 @@ class Gameplay():
             
         while arena['boss'].hp > 0:
             print()
+            print('--------------------------------------')
             target_boss = choice(arena['players'])
             print(arena['boss'].attack(target_boss))
             print()
@@ -182,6 +183,7 @@ class Gameplay():
                     print('Players wins congratultions')
                     break
                 else:
+                    print('--------------------------------------')
                     print('Turn of ', character)
                     if (isinstance(character, Archer)):
                         print(character.shoot_arrow(arena['boss']))
