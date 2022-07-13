@@ -26,7 +26,3 @@ class Thief(Character, Sigilo):
         if self.sigilo:
             return bool(random.randint(0, 1))
         return False
-
-    def esconderse(self, nivel_de_luz):
-        return self.sigilo and nivel_de_luz < 10
-
